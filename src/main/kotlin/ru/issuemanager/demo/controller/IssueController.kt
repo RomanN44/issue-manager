@@ -12,7 +12,4 @@ class IssueController(
 ) {
     @RequestMapping(value = ["/issues"], method = [RequestMethod.GET])
     fun getIssues() = issueService.getAll()
-
-    @RequestMapping(value = ["/"], method = [RequestMethod.GET])
-    fun testApp() = "Hello Spring!"
 }
